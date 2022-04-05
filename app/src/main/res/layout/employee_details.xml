@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="employeeDetailsView"
+            type="com.sample.employeeapp.employeedetails.EmployeeDetailsActivity"/>
+        <variable
+            name="employeeDetailsViewModel"
+            type="com.sample.employeeapp.employeedetails.EmployeeDetailsViewModel"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/emp_image_view"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_gravity="center"
+            android:contentDescription="employee image"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_employee"/>
+
+        <TextView
+            android:id="@+id/txt_employee_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emp_image_view"
+            android:layout_marginTop="5dp"
+            android:text="Employee Name: - "
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/txt_employee_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_employee_name"
+            android:layout_marginTop="5dp"
+            android:text="Employee User Name: -"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/txt_email_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_employee_user_name"
+            android:layout_marginTop="5dp"
+            android:text="Email address: -"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/txt_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_email_address"
+            android:layout_marginTop="5dp"
+            android:text="Address: -"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/txt_phone_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_address"
+            android:layout_marginTop="5dp"
+            android:text="Phone No: -"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/txt_website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_phone_no"
+            android:layout_marginTop="5dp"
+            android:text="Website: -"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/txt_company_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_website"
+            android:layout_marginTop="5dp"
+            android:text="Company details: - "
+            android:textColor="@color/black"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

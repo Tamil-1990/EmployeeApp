@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">EmployeeApp</string>
+
+    <string name="app_permissions">App Permissions</string>
+    <string name="app_required_permission">Permissions are required for the App to continue.</string>
+    <string name="app_required_all_permission">You have denied some permissions, allow all permissions to continue.</string>
+    <string name="go_settings">Go, Settings</string>
+    <string name="no_exit_app">No, Exit app</string>
+    <string name="yes">Yes</string>
+
+    <string name="employee_details">EMPLOYEE DETAILS</string>
+    <string name="try_again">Try Again</string>
+</resources>
